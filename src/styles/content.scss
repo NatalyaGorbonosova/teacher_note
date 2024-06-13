@@ -1,0 +1,311 @@
+@import 'vars';
+
+
+
+.list-students {
+    display: flex;
+    flex-direction: column;
+    
+
+    &__header {
+        background-color: $colorMidle;
+        min-height: 72px;
+        min-width: 600px;
+        text-align: center;
+        border-radius: 20cap 20cap 0 0;
+    }
+
+    &__title {
+        font-size: 2rem;
+        color: $colorDarck;
+    }
+
+    &__content {
+        background-color: $colorLight;
+        min-width: 600px;
+        padding: 2% 4%;
+        min-height: 356px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 30px;
+        border-radius: 0 0 2cap 2cap;
+        border: 1px solid $colorMidle;
+        
+    }
+
+    &__block-students {
+        min-height: 180px;
+    }
+
+    &__pagination {
+        min-height: 20px;
+    }
+    
+    &__btn {
+        display: flex;
+        justify-content: end;
+    }
+
+    &__add-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 260px;
+        align-items: right;
+        height: 80px;
+        background-color: $colorMidle;
+        border: 1px solid $colorDarck;
+        border-radius: 10cap;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        font-family: Lato;
+        color: $colorDarck;
+        text-align: center;
+    }
+}
+
+.financial-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+
+    &__header{
+        background-color: $colorMidle;
+        min-height: 72px;
+        min-width: 600px;
+        text-align: center;
+        border-radius: 20cap 20cap 0 0;
+    }
+
+    &__title {
+        font-size: 2rem;
+        color: $colorDarck;
+    }
+
+    &__content {
+        background-color: $colorLight;
+        min-width: 600px;
+        padding: 2% 4%;
+        min-height: 188px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        border-radius: 0 0 2cap 2cap;
+        border: 1px solid $colorMidle;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    &__subtitle {
+        font-size: 1.5rem;
+        color: $colorDarck;
+        min-width: 300px;
+    }
+    &__text{
+        font-size: 24px;
+        min-width: 200px;
+        &_green {
+            color: $colorGreen;
+        }
+        &_red {
+            color: $colorRed;
+        }
+    }
+}
+
+.schedule {
+    display: flex;
+    flex-direction: column;
+    
+    
+    &__header{
+        background-color: $colorMidle;
+        min-height: 72px;
+        min-width: 600px;
+        text-align: center;
+        border-radius: 20cap 20cap 0 0;
+    }
+
+    &__title {
+        font-size: 2rem;
+        color: $colorDarck;
+    }
+
+    &__content {
+        background-color: $colorLight;
+        min-width: 728px;
+        padding: 2% 4%;
+        min-height: 312px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        border-radius: 0 0 2cap 2cap;
+        border: 1px solid $colorMidle;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    &__btn {
+        display: flex;
+        justify-content: end;
+    }
+
+    &__add-lesson {
+        justify-content: right;
+        width: 328px;
+        align-items: right;
+        height: 64px;
+        background-color: $colorMidle;
+        border: 1px solid $colorDarck;
+        border-radius: 10cap;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        font-family: Lato;
+        color: $colorDarck;
+    }
+}
+
+.list-tasks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    
+    
+    &__header{
+        background-color: $colorMidle;
+        min-height: 72px;
+        min-width: 600px;
+        text-align: center;
+        border-radius: 20cap 20cap 0 0;
+    }
+
+    &__title {
+        font-size: 2rem;
+        color: $colorDarck;
+    }
+
+    &__content {
+        background-color: $colorLight;
+        min-width: 728px;
+        padding: 2% 4%;
+        min-height: 312px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        border-radius: 0 0 2cap 2cap;
+        border: 1px solid $colorMidle;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    &__btn {
+        display: flex;
+        justify-content: end;
+    }
+
+    &__add-task {
+        justify-content: right;
+        width: 328px;
+        align-items: right;
+        height: 64px;
+        background-color: $colorMidle;
+        border: 1px solid $colorDarck;
+        border-radius: 10cap;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        font-family: Lato;
+        color: $colorDarck;
+    }
+}
+
+.lesson {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    min-height: 64px;
+    min-width: 700px;
+    
+    
+    font-size: 1.2rem;
+    color: $colorDarck;
+
+    &__time {
+        border-radius: 2cap 0 0 2cap;
+        min-width: 180px;
+        min-height: 50px;
+        border: 1px solid $colorDarck;
+        background-color: $colorMidle;
+        align-items: center;
+    }
+
+    &__title {
+        min-width: 324px;
+        min-height: 50px;
+        border: 1px solid $colorDarck;
+        
+    }
+    &__paid {
+        min-width: 180px;
+        min-height: 50px;
+        font-size: 1rem;
+        border-radius: 0 3cap 3cap 0;
+        border: 1px solid $colorDarck;
+    }
+}
+
+.task {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    min-height: 64px;
+    min-width: 700px;
+    
+    
+    font-size: 1.2rem;
+    color: $colorDarck;
+
+    &__number {
+        border-radius: 2cap 0 0 2cap;
+        min-width: 88px;
+        min-height: 50px;
+        border: 1px solid $colorDarck;
+        background-color: $colorMidle;
+        align-items: center;
+    }
+
+    &__title {
+        min-width: 416px;
+        min-height: 50px;
+        border: 1px solid $colorDarck;
+        
+    }
+    &__complited {
+        min-width: 180px;
+        min-height: 50px;
+        font-size: 1rem;
+        border-radius: 0 3cap 3cap 0;
+        border: 1px solid $colorDarck;
+    }
+}
+
+.student {
+    display: flex;
+    flex-direction: column;
+    background-color: $colorMidle;
+    font-size: 1.2rem;
+    color: $colorDarck;
+    min-height: 100px;
+    max-width: 260px;
+    border: 1px solid $colorDarck;
+    border-radius: 10cap;
+    text-align: center;
+}

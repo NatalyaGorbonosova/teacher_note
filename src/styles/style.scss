@@ -1,0 +1,41 @@
+@import 'vars';
+@import 'header';
+@import 'content';
+@import 'addStudent';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html {
+    font-size: 24px;
+}
+
+body {
+    background-image: url(../image//image_background.jpg);
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    padding-left: calc(50% - 1600px / 2);
+    padding-right: calc(50% - 1600px / 2);
+}
+
+.content {
+    background-color: $colorBackground;
+    min-height: 900px;
+    padding: 4% 8%;
+    display: flex;
+    gap: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: Lato;
+}
+
