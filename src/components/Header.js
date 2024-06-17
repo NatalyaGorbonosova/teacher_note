@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import home_icon from '../image/home_icon.svg';
 import menu_icon from '../image/menu_icon.svg';
-import user_icon from '../image/user_icon.svg'
+import user_icon from '../image/user_icon.svg';
 
 function Header() {
     return ( 

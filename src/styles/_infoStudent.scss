@@ -1,0 +1,57 @@
+.info-student {
+    max-width: 1600px;
+    background-color: $colorBackground;
+    min-height: 900px;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    padding: 0% 4%;
+    color: $colorDarck;
+    
+    &__title {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    &__left {
+        border-right: 3px solid $colorMidle;
+        max-width: 750px;
+        
+    }
+
+    &__data {
+        display: grid;
+        grid-template-columns: 45% 45%;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__btn-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding-top: 36px;
+    }
+    &__btn {
+        max-width: 220px;
+        padding: 8px 24px;
+        max-height: 50px;
+        background-color: $colorMidle;
+        border: 1px solid $colorDarck;
+        border-radius: 10cap;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        font-family: Lato;
+        color: $colorDarck;
+        text-align: center;
+    }
+    &__right {
+        margin-left: 1%;
+        border-left: 3px solid $colorMidle;
+        padding-left: 10%;
+    }
+}

@@ -1,0 +1,68 @@
+.add-lesson {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    &__header {
+        background-color: $colorMidle;
+        min-height: 72px;
+        width: 50%;
+        text-align: center;
+        border-radius: 20cap 20cap 0 0;
+    }
+
+    &__title {
+        font-size: 2rem;
+        color: $colorDarck;
+    }
+    &__content {
+        background-color: $colorLight;
+        width: 50%;
+        padding: 2% 4%;
+        min-height: 300px;
+        display: grid;
+        grid-template-columns: 90%;
+        justify-content: center;
+        gap: 30px;
+        border-radius: 0 0 2cap 2cap;
+        border: 1px solid $colorMidle;
+        
+    }
+    
+    &__input {
+        min-width: 70%;
+        min-height: 50px;
+        border: 1px solid $colorMidle;
+        border-radius: 2cap;
+        padding-left: 8px;
+        font-size: 1rem;
+        font-family: Lato;
+        color: $colorDarck;
+        margin-bottom: 16px;
+    }
+    
+    &__btn-box {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        justify-content: space-around;
+        gap: 30px;
+    }
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 260px;
+        align-items: right;
+        height: 60px;
+        background-color: $colorMidle;
+        border: 1px solid $colorDarck;
+        border-radius: 10cap;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        font-family: Lato;
+        color: $colorDarck;
+        text-align: center;
+    }
+}

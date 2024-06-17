@@ -1,0 +1,56 @@
+.modal {
+    position: fixed;
+    top: 40vh;
+    left: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+ 
+
+    &__title {
+        color: $colorDarck;
+        font-size: 1rem;
+        background-color: $colorMidle;
+        border-radius: 1cap 1cap 0 0;
+        border: 2px solid $colorMidle;
+        padding: 10px;
+        width: 100%;
+
+        
+        
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        background-color: $colorLight;
+        border-radius: 0 0 1cap 1cap;
+        border: 2px solid $colorMidle;
+        padding: 20px;
+       
+    }
+    &__btn-box {
+        margin-top: 24px;
+        display: flex;
+        justify-content: space-between;
+        pad: 24px 4px;
+    }
+    &__btn {
+        
+        max-width: 260px;
+        max-height: 60px;
+        background-color: $colorMidle;
+        border: 1px solid $colorDarck;
+        border-radius: 10cap;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        font-family: Lato;
+        color: $colorDarck;
+        text-align: center;
+        padding: 8px;
+    }
+}
+

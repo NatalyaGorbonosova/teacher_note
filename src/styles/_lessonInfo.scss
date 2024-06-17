@@ -1,0 +1,39 @@
+.lesson-info {
+    margin-left: 16px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    min-height: 64px;
+   
+    font-size: 1rem;
+    color: $colorDarck;
+
+    &__subtitle {
+        
+        padding-left: 4px;
+        padding-right: 4px;
+        min-height: 50px;
+        
+        align-items: center;
+    }
+    &__text {
+        
+        min-height: 50px;
+        min-width: 30%;
+    }
+    &__paid {
+        min-width: 30%;
+        min-height: 50px;
+        font-size: 1rem;
+        padding: 2%;
+        border-radius: 2cap;
+       
+    } 
+    &__icon {
+        
+        padding-left: 24px;
+    }
+    &__del {
+
+    }
+}

@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import Student from "./Student";
+import { useSelector } from "react-redux";
 
 function ListStudents() {
-    const students = [{id: 1, name: 'Лиза', grade: 8}]
+    const students = useSelector((state) => state.students.students);
     return ( 
         <div className="list-students">
             <div className="list-students__header">
@@ -13,10 +14,12 @@ function ListStudents() {
             <div className="list-students__content">
                 <div className="list-students__block-students">
                     {students.map(student => (
-                        <Student 
-                        key={student.id}
-                        name={student.name}
-                        grade={student.grade}/>
+                        <Link key={student.id} to={`/students/${student.id}`}>
+                            <Student 
+                            key={student.id}
+                            name={student.studentName}
+                            grade={student.grade}/>
+                        </Link>
                     ))}
                 </div>
                 <div className="list-students__pagination"></div>

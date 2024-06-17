@@ -11,7 +11,7 @@ function ContentBlock() {
         </div>
         <div className="content__right">
             <Schedule />
-            <ListTasks />
+            {/* <ListTasks /> */}
         </div>
         
     </section> );
