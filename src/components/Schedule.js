@@ -30,8 +30,6 @@ function Schedule() {
             if (getDayFromDateLesson(lesson.date) === dayNow && getMonthFromLesson(lesson.date) === monthNow && getYearFromDateLesson(lesson.date) === yearNow) {
                 lessons.push({id: lesson.id, time: lesson.time, name: student.studentName, title: lesson.title, paid: lesson.paid, idStudent: student.id});
             }
-           
-           
         });
     });
     

@@ -12,10 +12,6 @@ function AddLessonToSchedule({ onClose }) {
     const [lessonTitle, setLessonTitle] = useState('');
     const [idStudent, setIdStudent] = useState(students[0].id);
 
-
-
-  
-    
     const handleAddLesson = (e) => {
         e.preventDefault();
         const lesson = {id: Date.now(), date: lessonDate, time: lessonTime, title: lessonTitle, paid: false};
@@ -24,7 +20,7 @@ function AddLessonToSchedule({ onClose }) {
         alert('Урок добавлен');
     }
     return ( 
-        <div className="add-lesson">
+        <div className="add-lesso">
             <div className="add-lesson__header">
                 <h2 className="add-lesson__title">Добавить урок</h2>
             </div>

@@ -24,7 +24,7 @@ function LessonInfo({id, lesson}) {
             <p className="lesson-info__text">{lesson.title}</p>
             <button onClick={() => handleChangePaid()} className="lesson-info__paid" style={{color: '#F1F6FF', background: lesson.paid ? '#48CE86' : '#F55D5D'}}>
                 {lesson.paid ? 'Оплачен' : 'Не оплачен'}</button >
-                <img src={delete_icon} className="lesson-info__icon"/>
+                {/* <img src={delete_icon} className="lesson-info__icon"/> */}
             
 
         </div>

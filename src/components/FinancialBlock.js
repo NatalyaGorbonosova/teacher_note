@@ -5,6 +5,7 @@ function FinancialBlock() {
     const students = useSelector((state) => state.students.students);
     const dateNow = new Date();
     const monthNow = dateNow.getMonth() + 1;
+    const yearNow = dateNow.getFullYear();
     const [totalSum, setTotalSum] = useState(0);
     const [totalDuty, setTotalDuty] = useState(0);
 
@@ -12,6 +13,9 @@ function FinancialBlock() {
         const dateArray = dateLesson.split('-');
         return parseInt(dateArray[1]);
     }
+    function getYearFromDateLesson(dateLesson) {
+        return parseInt(dateLesson.split('-')[0])
+    };
     
     useEffect(() => {
         let total = 0;
@@ -19,10 +23,10 @@ function FinancialBlock() {
         students.forEach(student => {
             student.lessons.forEach(lesson => {
                 
-                if (lesson.paid && getMonthFromLesson(lesson.date) === monthNow) {
+                if (lesson.paid && getMonthFromLesson(lesson.date) === monthNow && getYearFromDateLesson(lesson.date) === yearNow) {
                     total = total + parseInt(student.price);
                 }
-                if (!lesson.paid && getMonthFromLesson(lesson.date) === monthNow) {
+                if (!lesson.paid && getMonthFromLesson(lesson.date) === monthNow && getYearFromDateLesson(lesson.date) === yearNow) {
                     duty = duty + parseInt(student.price);
                 }
             });

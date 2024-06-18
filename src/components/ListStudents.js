@@ -26,7 +26,6 @@ function ListStudents() {
                 <div className="list-students__btn">
                     <Link to={'/add-student'} className="list-students__add-btn">Добавить ученика</Link>
                 </div>
-                
             </div>
         </div>
      );

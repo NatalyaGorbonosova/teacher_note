@@ -33,7 +33,6 @@ const studentsSlice = createSlice({
                 student.lessons.push(action.payload.lesson);
                 localStorage.setItem('students', JSON.stringify(state.students))
             }
-            
         },
         togglePaid(state, action) {
             const student = state.students.find((student) => student.id === action.payload.idStudent);
