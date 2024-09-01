@@ -35,3 +35,33 @@
     }
     
 }
+@media (max-width: 480px) {
+    .lesson-info {
+       
+        font-size: 0.7rem;
+        min-height: 34px;
+    
+        &__subtitle {
+           
+            min-height: 30px;
+            font-size: 0.5rem;
+        }
+        &__text {
+            
+            min-height: 30px;
+            min-width: 60%;
+        }
+        &__paid {
+            min-width: 25%;
+            min-height: 30px;
+            font-size: 0.5rem;
+            
+           
+        } 
+        &__icon {
+            
+            padding-left: 24px;
+        }
+        
+    }
+}

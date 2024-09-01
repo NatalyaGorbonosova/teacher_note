@@ -96,7 +96,7 @@ function EditStudent({studentId, onClose}) {
                     </div>
                     <div className='edit-student__btn-block'>
                         
-                        <button className='add-student__btn' onClick={onClose}>
+                        <button className='edit-student__btn' onClick={onClose}>
                                 Назад</button> 
                         
                         

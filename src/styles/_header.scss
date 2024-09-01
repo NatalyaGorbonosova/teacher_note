@@ -4,7 +4,7 @@
     background-color: $colorDarck;
     padding: 4px 5%;
     height: 75px;
-    width: 1600px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,4 +13,10 @@
         display: flex;
         gap: 20%;
     }
+}
+@media (max-width: 480px) {
+    .header {
+        min-width: 100wv;
+    }
+   
 }

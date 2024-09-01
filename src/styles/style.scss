@@ -20,7 +20,7 @@ html {
 }
 
 body {
-    background-image: url(../image//image_background.jpg);
+   /*  background-image: url(../image//image_background.jpg); */
 }
 
 a {
@@ -34,13 +34,54 @@ a {
 
 .content {
     background-color: $colorBackground;
-    min-height: 900px;
+    min-height: 800px;
     padding: 4% 8%;
     display: flex;
+    
     gap: 30px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     font-family: Lato;
+}
+@media (max-width: 767px) {
+    .center{
+        padding-left: calc(50% - 383px);
+        padding-right: calc(50% - 383px);
+    }
+    .content{
+        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        &__left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 20px;
+    }
+    .center{
+        padding-left: calc(50% - 240px);
+        padding-right: calc(50% - 240px);
+    }
+    .content{
+        justify-content: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        &__left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    
+
 }
 

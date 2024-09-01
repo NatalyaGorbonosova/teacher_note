@@ -14,7 +14,7 @@
     }
 
     &__title {
-        font-size: 2rem;
+        font-size: 1.2rem;
         color: $colorDarck;
     }
     &__content {
@@ -49,6 +49,7 @@
         justify-content: space-around;
         gap: 30px;
     }
+
     &__btn {
         display: flex;
         align-items: center;
@@ -66,5 +67,10 @@
         font-family: Lato;
         color: $colorDarck;
         text-align: center;
+    }
+    &__btn:hover {
+        background-color: $colorHover;
+        color: $colorTextHover;
+        transition: 0.5s;
     }
 }

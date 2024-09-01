@@ -46,8 +46,8 @@ function AddLesson({ studentId, onClose }) {
                         key={'lesson title'}
                         onChange={(e) => setLessonTitle(e.target.value)}></input>
                     <div className="add-lesson__btn-box">
-                        <button className="add-lesson__btn" onClick={onClose}>Назад</button>
-                        <button className="add-lesson__btn" type='submit'>Добавить урок</button>
+                        <button className="add-lesson__btn btn" onClick={onClose}>Назад</button>
+                        <button className="add-lesson__btn btn" type='submit'>Добавить урок</button>
                         </div>
                 </form>
                 

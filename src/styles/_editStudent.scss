@@ -71,4 +71,56 @@
         color: $colorDarck;
         text-align: center;
     }
+    &__btn:hover {
+        background-color: $colorHover;
+        color: $colorTextHover;
+        transition: 0.5s;
+    }
+}
+@media (max-width: 480px) {
+    .edit-student {
+        
+        &__block {
+            min-width: 90vw;
+        }
+        &__header {
+            background-color: $colorMidle;
+            min-height: 54px;
+            
+        }
+    
+        &__title {
+            font-size: 1rem;
+            
+        }
+        &__content {
+            gap: 16px;
+           
+            
+        }
+        
+        &__input {
+            min-width: 80%;
+            min-height: 40px;
+            
+            font-size: 0.8rem;
+            
+            margin-bottom: 12px;
+        }
+        &__subtitle {
+            font-size: 1rem;
+            
+        }
+        
+        &__btn {
+            
+            width: 120px;
+           
+            height: 40px;
+            
+            font-size: 0.8rem;
+            
+        }
+        
+    }
 }

@@ -16,13 +16,13 @@
     }
 
     &__title {
-        font-size: 2rem;
+        font-size: 1.6rem;
         color: $colorDarck;
     }
 
     &__content {
         background-color: $colorLight;
-        min-width: 600px;
+        min-width: 500px;
         padding: 2% 4%;
         min-height: 356px;
         display: flex;
@@ -52,6 +52,7 @@
         justify-content: end;
     }
 
+
     &__add-btn {
         display: flex;
         align-items: center;
@@ -70,6 +71,11 @@
         color: $colorDarck;
         text-align: center;
     }
+    &__add-btn:hover {
+        background-color: $colorHover;
+        color: $colorTextHover;
+        transition: 0.5s;
+    }
 }
 
 .financial-block {
@@ -81,19 +87,19 @@
     &__header{
         background-color: $colorMidle;
         min-height: 72px;
-        min-width: 600px;
+        min-width: 500px;
         text-align: center;
         border-radius: 20cap 20cap 0 0;
     }
 
     &__title {
-        font-size: 2rem;
+        font-size: 1.6rem;
         color: $colorDarck;
     }
 
     &__content {
         background-color: $colorLight;
-        min-width: 600px;
+        min-width: 500px;
         padding: 2% 4%;
         min-height: 188px;
         display: flex;
@@ -131,13 +137,13 @@
     &__header{
         background-color: $colorMidle;
         min-height: 72px;
-        min-width: 600px;
+        min-width: 500px;
         text-align: center;
         border-radius: 20cap 20cap 0 0;
     }
 
     &__title {
-        font-size: 2rem;
+        font-size: 1.6rem;
         color: $colorDarck;
     }
 
@@ -159,6 +165,7 @@
         display: flex;
         justify-content: end;
     }
+    
 
     &__add-lesson {
         justify-content: right;
@@ -174,6 +181,11 @@
         line-height: normal;
         font-family: Lato;
         color: $colorDarck;
+    }
+    &__add-lesson:hover {
+        background-color: $colorHover;
+        color: $colorTextHover;
+        transition: 0.5s;
     }
 }
 
@@ -306,7 +318,7 @@
     display: flex;
     flex-direction: column;
     background-color: $colorMidle;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: $colorDarck;
     min-height: 100px;
     max-width: 260px;
@@ -314,4 +326,119 @@
     border-radius: 10cap;
     text-align: center;
     margin-bottom: 16px;
+}
+.student:hover {
+    background-color: $colorHover;
+    color: $colorTextHover;
+    transition: 0.5s;
+}
+
+@media (max-width: 480px) {
+    .list-students {
+        min-width: 100vw;
+        &__header {
+            min-height: 60px;
+            min-width: 300px;
+        }
+    
+        &__title {
+            font-size: 1.4rem;
+        }
+    
+        &__content {
+            min-width: 300px;
+            gap: 16px;    
+        }
+    
+        &__block-students {
+            gap: 16px;
+        }
+    
+        &__add-btn {
+            width: 150px;
+            height: 60px;
+            font-size: 1rem;
+        }
+        
+    }
+    .financial-block {
+        max-width: 95vw;
+        min-width: 390px;
+        align-items: center;
+    
+        &__header{
+            min-height: 60px;
+            max-width: 95wv;
+            min-width: 390px;
+        }
+    
+        &__title {
+            min-width: 390px;
+        }
+    
+        &__content {
+            flex-direction: column;
+            min-width: none;
+            max-width: 95wv;
+            gap: 16px;
+        }
+        &__subtitle {
+            min-width: 150px;
+        }
+        &__text{
+            font-size: 24px;
+            min-width: 150px;
+        }
+    }
+    .schedule {
+        &__header{
+            min-height: 60px;
+            min-width: 390px;
+        }
+        &__title{
+            font-size: 1.2rem;
+        }
+        &__content {
+            background-color: $colorLight;
+            min-width: 390px;
+            max-width: 95vw;
+            min-height: none;
+            gap: 16px;    
+        }
+        &__add-lesson {
+            width: 200px;
+            height: 52px;
+        }
+    }
+    .lesson {
+        min-height: 52px;
+        min-width: 390px;
+        font-size: 1rem;
+    
+        &__time {
+            min-width: 90px;
+            min-height: 40px;
+            font-size: 0.9rem;
+        }
+    
+        &__title {
+            min-width: 180px;
+            min-height: 40px;
+            
+        }
+        &__paid {
+            min-width: 90px;
+            min-height: 40px;
+            font-size: 0.8rem;
+        }
+    }
+    .student {
+       
+        font-size: 1rem;
+        
+        min-height: 60px;
+        max-width: 150px;
+        
+        margin-bottom: 12px;
+    }
 }

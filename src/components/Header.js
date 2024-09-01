@@ -8,12 +8,12 @@ function Header() {
         <div className="header">
             <div className="header__left">
                 <Link to={'/'}>
-                <img src={home_icon}/></Link>
+                <img src={home_icon} /></Link>
                 
             </div>
             <div className="header__right">
-                <img src={user_icon}/>
-                <img src={menu_icon}/>
+                <img src={user_icon} />
+                <img src={menu_icon} />
             </div>
         </div>
      );

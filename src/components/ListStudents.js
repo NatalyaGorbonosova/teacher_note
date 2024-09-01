@@ -23,8 +23,8 @@ function ListStudents() {
                     ))}
                 </div>
                 <div className="list-students__pagination"></div>
-                <div className="list-students__btn">
-                    <Link to={'/add-student'} className="list-students__add-btn">Добавить ученика</Link>
+                <div className="list-students__btn btn">
+                    <Link to={'/add-student'} className="list-students__add-btn btn">Добавить ученика</Link>
                 </div>
             </div>
         </div>
