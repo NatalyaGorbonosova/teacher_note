@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/teacher_note/static/css/main.5ad8654c.css",
+    "main.js": "/teacher_note/static/js/main.46e1c06f.js",
+    "static/js/453.da87be49.chunk.js": "/teacher_note/static/js/453.da87be49.chunk.js",
+    "static/media/phone_icon.svg": "/teacher_note/static/media/phone_icon.c2cd5caa14f0d88d849094cfc0580e2f.svg",
+    "static/media/home_icon.svg": "/teacher_note/static/media/home_icon.a75b40660f995ea00a84d322159c2d92.svg",
+    "static/media/user_icon.svg": "/teacher_note/static/media/user_icon.b9c5ffb6b78dd574d2d3933e9f139c1c.svg",
+    "static/media/delete_icon.svg": "/teacher_note/static/media/delete_icon.fc3963f53991332d70bcead15a706d0a.svg",
+    "static/media/menu_icon.svg": "/teacher_note/static/media/menu_icon.c85463e4cc1fdff1d76155e1f2e79346.svg",
+    "index.html": "/teacher_note/index.html",
+    "main.5ad8654c.css.map": "/teacher_note/static/css/main.5ad8654c.css.map",
+    "main.46e1c06f.js.map": "/teacher_note/static/js/main.46e1c06f.js.map",
+    "453.da87be49.chunk.js.map": "/teacher_note/static/js/453.da87be49.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5ad8654c.css",
+    "static/js/main.46e1c06f.js"
+  ]
+}
