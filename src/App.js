@@ -1,5 +1,5 @@
 import './styles/style.scss';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route, HashRouter} from 'react-router-dom';
 import MainPage from "./pages/MainPage";
 import AddStudent from './pages/AddStudent';
 import { Helmet } from "react-helmet";
@@ -16,13 +16,13 @@ function App() {
           rel="stylesheet"
         />
       </Helmet>
-      <Router>
+      <HashRouter>
           <Routes>
             <Route path='/' element={<MainPage />} />
             <Route path='/add-student' element={<AddStudent />} />
             <Route path='/students/:id' element={<InfoStudent />} ></Route>
           </Routes>
-      </Router>
+      </HashRouter>
     </>
   );
 }
